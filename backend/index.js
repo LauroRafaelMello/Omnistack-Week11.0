@@ -20,6 +20,16 @@ app.use(express.json());
 * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
 */
 
+/*
+* SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+* NoSQL: MongoDB, CouchDB, etc
+*/
+
+/*
+* Driver: SELECT * FROM users
+* Query Builder: table('users').select('*').where()
+*/
+
 app.post('/users', (request, response) => {
     const body = request.body;
     console.log(body);
